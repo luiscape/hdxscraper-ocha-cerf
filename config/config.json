@@ -1,0 +1,90 @@
+{
+  "endpoints": [
+    {
+      "name": "funding",
+      "url": "http://cerfgms-webapi.unocha.org/v1/project/All.json"
+    },
+    {
+      "name": "contributions",
+      "url": "http://cerfgms-webapi.unocha.org/v1/iati/donorcontribution.xml"
+    }
+  ],
+  "ckan": {
+    "url": "https://data.hdx.rwlabs.org"
+  },
+  "database":[
+    {
+      "name": "test",
+      "primary_key": ["id"],
+      "columns": [
+          { "field_name": "id" , "type": "TEXT" },
+          { "field_name": "name" , "type": "TEXT" },
+          { "field_name": "created" , "type": "TEXT" }
+       ]
+    },
+    {
+      "name": "funding",
+      "primary_key": ["projectID"],
+      "columns": [
+          { "field_name": "projectID", "type": "INTEGER" },
+          { "field_name": "year", "type": "INTEGER" },
+          { "field_name": "projectCode", "type": "TEXT" },
+          { "field_name": "projectTitle", "type": "TEXT" },
+          { "field_name": "applicationID", "type": "INTEGER" },
+          { "field_name": "applicationCode", "type": "TEXT" },
+          { "field_name": "windowID", "type": "INTEGER" },
+          { "field_name": "windowFullName", "type": "TEXT" },
+          { "field_name": "countryID", "type": "INTEGER" },
+          { "field_name": "countryName", "type": "TEXT" },
+          { "field_name": "agencyID", "type": "TEXT" },
+          { "field_name": "agencyName", "type": "TEXT" },
+          { "field_name": "implementingAgencyID", "type": "TEXT" },
+          { "field_name": "implementingAgencyName", "type": "TEXT" },
+          { "field_name": "emergencyTypeID", "type": "INTEGER" },
+          { "field_name": "emergencyTypeName", "type": "TEXT" },
+          { "field_name": "projectsectors_sectorID", "type": "INTEGER" },
+          { "field_name": "projectsectors_sectorName", "type": "TEXT" },
+          { "field_name": "projectsectors_sectorAmount", "type": "TEXT" },
+          { "field_name": "projectsectors_clusterName", "type": "TEXT" },
+          { "field_name": "projectsectors_iascSectorname", "type": "TEXT" },
+          { "field_name": "totalAmountApproved", "type": "TEXT" },
+          { "field_name": "beneficiariesGirls", "type": "INTEGER" },
+          { "field_name": "beneficiariesBoys", "type": "INTEGER" },
+          { "field_name": "beneficiariesChildren", "type": "INTEGER" },
+          { "field_name": "beneficiariesWomen", "type": "INTEGER" },
+          { "field_name": "beneficiariesMen", "type": "INTEGER" },
+          { "field_name": "beneficiariesFemale", "type": "INTEGER" },
+          { "field_name": "beneficiariesMale", "type": "INTEGER" },
+          { "field_name": "beneficiariesAdults", "type": "INTEGER" },
+          { "field_name": "beneficiariesTotal", "type": "INTEGER" },
+          { "field_name": "projectStatus", "type": "TEXT" },
+          { "field_name": "projectStartDate", "type": "TEXT" },
+          { "field_name": "letterSentToAgencyDate", "type": "TEXT" },
+          { "field_name": "dateUSGSignature", "type": "TEXT" },
+          { "field_name": "disbursementDate", "type": "TEXT" },
+          { "field_name": "emergencyGroupName", "type": "TEXT" },
+          { "field_name": "emergencyCategoryName", "type": "TEXT" },
+          { "field_name": "regionName", "type": "TEXT" },
+          { "field_name": "subRegionName", "type": "TEXT" },
+          { "field_name": "continentName", "type": "TEXT" },
+          { "field_name": "projectTypeID", "type": "INTEGER" },
+          { "field_name": "projectTypeName", "type": "TEXT" }
+      ]
+    },
+    {
+      "name": "contributions",
+      "primary_key": ["id"],
+      "columns": [
+          { "field_name": "display_name", "type": "TEXT" },
+          { "field_name": "description", "type": "TEXT" },
+          { "field_name": "package_count", "type": "INTEGER" },
+          { "field_name": "created", "type": "TEXT" },
+          { "field_name": "name", "type": "TEXT" },
+          { "field_name": "title", "type": "TEXT" },
+          { "field_name": "revision_id", "type": "TEXT" },
+          { "field_name": "num_followers", "type": "INTEGER" },
+          { "field_name": "id", "type": "TEXT" }
+       ]
+    }
+  ]
+}
