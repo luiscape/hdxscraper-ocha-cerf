@@ -3,25 +3,12 @@
     {
       "name": "funding",
       "url": "http://cerfgms-webapi.unocha.org/v1/project/All.json"
-    },
-    {
-      "name": "contributions",
-      "url": "http://cerfgms-webapi.unocha.org/v1/iati/donorcontribution.xml"
     }
   ],
   "ckan": {
     "url": "https://data.hdx.rwlabs.org"
   },
   "database":[
-    {
-      "name": "test",
-      "primary_key": ["id"],
-      "columns": [
-          { "field_name": "id" , "type": "TEXT" },
-          { "field_name": "name" , "type": "TEXT" },
-          { "field_name": "created" , "type": "TEXT" }
-       ]
-    },
     {
       "name": "funding",
       "primary_key": ["projectID"],
@@ -70,21 +57,6 @@
           { "field_name": "projectTypeID", "type": "INTEGER" },
           { "field_name": "projectTypeName", "type": "TEXT" }
       ]
-    },
-    {
-      "name": "contributions",
-      "primary_key": ["id"],
-      "columns": [
-          { "field_name": "display_name", "type": "TEXT" },
-          { "field_name": "description", "type": "TEXT" },
-          { "field_name": "package_count", "type": "INTEGER" },
-          { "field_name": "created", "type": "TEXT" },
-          { "field_name": "name", "type": "TEXT" },
-          { "field_name": "title", "type": "TEXT" },
-          { "field_name": "revision_id", "type": "TEXT" },
-          { "field_name": "num_followers", "type": "INTEGER" },
-          { "field_name": "id", "type": "TEXT" }
-       ]
     }
   ]
 }
