@@ -27,11 +27,12 @@ def main():
 
 
 if __name__ == '__main__':
-  main()
-  # try:
-  #   main()
-  #   print('{success} Successully collected OCHA CERF data.'.format(success=item('success')))
+  try:
+    main()
+    print('{success} Successully collected OCHA CERF data.'.format(success=item('success')))
+    scraperwiki.status('ok')
 
-  # except Exception as e:
-  #   print('{failure} Failed to collected OCHA CERF data.'.format(failure=item('error')))
+  except Exception as e:
+    print('{failure} Failed to collected OCHA CERF data.'.format(failure=item('error')))
+    scraperwiki.status('error', 'Failed to collect data.')
 
