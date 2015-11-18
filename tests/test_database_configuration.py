@@ -45,8 +45,51 @@ class TestTableConfiguration(unittest.TestCase):
         os.path.join(self.folder, 'config.json')
       ]
     self.tables = {
-      'funding': [],
-      'contributions': []
+      'funding': [
+        "projectID",
+        "year",
+        "projectCode",
+        "projectTitle",
+        "applicationID",
+        "applicationCode",
+        "windowID",
+        "windowFullName",
+        "countryID",
+        "countryName",
+        "agencyID",
+        "agencyName",
+        "implementingAgencyID",
+        "implementingAgencyName",
+        "emergencyTypeID",
+        "emergencyTypeName",
+        "projectsectors_sectorID",
+        "projectsectors_sectorName",
+        "projectsectors_sectorAmount",
+        "projectsectors_clusterName",
+        "projectsectors_iascSectorname",
+        "totalAmountApproved",
+        "beneficiariesGirls",
+        "beneficiariesBoys",
+        "beneficiariesChildren",
+        "beneficiariesWomen",
+        "beneficiariesMen",
+        "beneficiariesFemale",
+        "beneficiariesMale",
+        "beneficiariesAdults",
+        "beneficiariesTotal",
+        "projectStatus",
+        "projectStartDate",
+        "letterSentToAgencyDate",
+        "dateUSGSignature",
+        "disbursementDate",
+        "emergencyGroupName",
+        "emergencyCategoryName",
+        "regionName",
+        "subRegionName",
+        "continentName",
+        "projectTypeID",
+        "projectTypeName"
+      ]
     }
 
   def test_column_names(self):
